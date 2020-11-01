@@ -1,0 +1,112 @@
+00 ' Matrix Movies Like Program
+01 ' Version 2.0
+02 ' Interactive one
+03 ' Fill col number 1 to 38 to center chr rain and 
+04 ' avoid carraige return at col 40
+
+10 '   Clean and go green
+15 DEFINT N, X, Y
+16 ' Cursor Pos
+17 X = 0
+18 Y = 0
+
+20 SCREEN 2,0,0
+30 CLS
+31 LOCATE 0,0,0
+
+40 '  Matrix Rain
+41 ' Rain parameters
+42 NCOL = 2 - 1  'chr droplet columns
+43 NCOLB = 4 - 1 'eraser columns
+44 DIM COLX%(NCOL), COLBX%(NCOLB), COLY%(NCOL), COLBY%(NCOLB)
+
+45 ' Start new seed for random function
+46 PRINT "Push any key to start."
+47 A$ = INKEY$
+48 U = RND
+49 IF A$="" THEN 47
+
+65 '   Overture Scene
+66 ' Data
+67 CLS
+68 MAT1$ = "Wake up, Neo..."
+69 MAT2$ = "The Matrix has you..."
+70 MAT3$ = "Follow the white rabbit."
+71 MAT4$ = "Knock, knock, Neo."
+
+98 PLAY "PPPPP"
+99 BEEP
+100 MYTEXT$ = MAT1$
+101 GOSUB 500
+102 PLAY "PPPPPP"
+
+110 CLS
+111 MYTEXT$ = MAT2$
+112 GOSUB 500
+113 PLAY "PPPPPPPP"
+
+120 CLS
+121 MYTEXT$ = MAT3$
+122 GOSUB 500
+123 PLAY "PPPPPPPP"
+
+130 CLS
+131 LOCATE 0,0,0
+132 PRINT MAT4$
+133 PLAY "PPPPP"
+
+170 ' random col chr start
+171 FOR N=0 TO NCOL
+172 COLX%(N) = FIX(RND*38) + 1
+173 COLY%(N) = FIX(RND*23)
+174 NEXT N
+
+200 ' random col black start
+201 FOR N=0 TO NCOLB
+202 COLBX%(N) = FIX(RND*38) + 1
+203 COLBY%(N) = FIX(RND*23)
+204 NEXT N
+
+220 ' start the rain
+221 YC = 0 ' Y counter
+222 CLS
+
+224 ' chr rain
+225 FOR N=0 TO NCOL
+226 Y = YC - COLY%(N)
+229 ' when letter appears at top screen
+230 IF (Y) >=0 THEN 231 ELSE 250
+231 NALPHA = FIX(RND*52)
+232 YL = Y MOD 24
+235 IF YC > 23 THEN IF YL = 0 THEN COLX%(N) = FIX(RND*38) + 1
+236 LOCATE COLX%(N), YL, 0
+237 PRINT CHR$(NALPHA+65)
+250 NEXT N
+
+260 ' black rain
+261 FOR N=0 TO NCOLB
+262 Y = YC - COLBY%(N)
+263 IF (Y) >=0 THEN 264 ELSE 270
+264 YL = Y MOD 24
+265 IF YC > 23 THEN IF YL = 0 THEN COLBX%(N) = FIX(RND*38) + 1
+266 LOCATE COLBX%(N), YL, 0
+267 PRINT " "
+270 NEXT N
+
+280 YC = YC + 1
+
+281 GOTO 225
+
+499 END 'end of main program
+
+500 '   Print chr by chr
+501 CLS
+502 LONGUEUR = LEN(MYTEXT$)
+503 FOR N=1 TO LONGUEUR
+504 PLAY "P"
+510 P$ = LEFT$(MYTEXT$, N)
+515 LOCATE X, Y, 0
+520 PRINT P$
+530 NEXT N
+540 RETURN
+
