@@ -15,7 +15,7 @@ Each day of November a new program will be uploaded with some screenshots of the
 
 ![matrix_gif](./PxNov_201101_Matrix/PxNov_201101_Matrix.gif)
 
-### 2nd Novenber: Mondrian
+### 2nd November: Mondrian
 ![mondrian_gif](./PxNov_201102_Mondrian/PxNov_201102_Mondrian.gif)
 
 
