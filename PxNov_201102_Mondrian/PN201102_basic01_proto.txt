@@ -1,0 +1,77 @@
+00 ' Mondrian like art on the MO5
+10 CLS
+20 SCREEN 0,7,0
+25 LOCATE 0,0,0
+
+30 DEFINT X, T, Y
+35 XWIN = 40
+36 YWIN = 25
+40 XMAR = 4
+41 YMAR = 2
+
+45 ' Start new seed for random function
+46 PRINT "Push any key to start."
+47 A$ = INKEY$
+48 U = RND
+49 IF A$="" THEN 47
+
+50 ' draw vert line, random x
+51 CLS
+55 XC = FIX(RND*(XWIN-2*XMAR-1)) + XMAR
+56 X1 = XC
+65 THICK=3
+66 Y1 = 0
+67 Y2 = 25
+70 GOSUB 610
+
+79 ' draw horz line, random x
+80 YC = FIX(RND*(YWIN-2*YMAR-1)) + YMAR
+81 Y1 = YC
+85 X1 = 0
+86 X2 = 40
+90 GOSUB 660
+
+130 XMARL = 2
+135 XMARR = XC-2
+140 YMART = YC + 2
+145 YMARB = YWIN-2
+150 XC = FIX(RND*(XMARR - XMARL)) + XMARL
+155 X1 = XC
+166 Y1 = YC
+167 Y2 = YWIN
+170 GOSUB 610
+
+
+180 YC = FIX(RND*(YMARB-YMART)) + YMART
+182 Y1 = YC
+185 X1 = 0
+186 X2 = XMARR+2
+190 GOSUB 660
+
+
+
+495 A$=INKEY$
+496 IF A$="" THEN 495
+497 CLS
+
+500 END
+
+550 ' draw line on chr grid
+555 FOR T=0 TO THICK-1
+560 LINE(X1*8+T,Y1*8)-(X2*8+T,Y2*8)
+570 NEXT T
+580 RETURN
+
+600 ' draw vet line
+610 X2=X1
+620 FOR T=0 TO THICK-1
+630 LINE(X1*8+T,Y1*8)-(X2*8+T,Y2*8)
+635 NEXT T
+640 RETURN
+
+650 ' draw horz line
+660 Y2=Y1
+670 FOR T=0 TO THICK-1
+680 LINE(X1*8,Y1*8+T)-(X2*8,Y2*8+T)
+690 NEXT T
+695 RETURN
