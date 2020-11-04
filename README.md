@@ -9,8 +9,6 @@ The artwork is either fix or interactive.
 
 Each day of November a new program will be uploaded with some screenshots of the artwork.
 
-[TOC]
-
 ## Example
 
 ### 1st November: Matrix
@@ -27,6 +25,8 @@ Each day of November a new program will be uploaded with some screenshots of the
 ## Technical details
 
 The BASIC program are developped for the french microcomputer Thomson MO5, runnning a Microsoft Basic 1.0. All program are tested and developped in the emulator DCMOTO available [here](http://dcmoto.free.fr/).
+
+![ThomsonMO5](MO5.jpg)
 
 The emulation screen is captured thanks to [ScreenToGif](https://www.screentogif.com/downloads). 
 
