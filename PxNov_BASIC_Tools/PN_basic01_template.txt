@@ -24,3 +24,12 @@
 24 A$ = INKEY$
 25 U = RND
 26 IF A$="" THEN 24
+
+
+
+
+495 A$=INKEY$
+496 IF A$="" THEN 495
+497 CLS
+
+500 END
