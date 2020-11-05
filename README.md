@@ -19,12 +19,15 @@ Each day of November a new program will be uploaded with some screenshots of the
 ![mondrian_gif](./PxNov_201102_Mondrian/PxNov_201102_Mondrian.gif)
 
 ### 3rd November: Cyberpunk
-![cyberûnk_gif](./PxNov_201103_80sGrid/PxNov_201103_Cyberpunk.gif)
+![cyberpunk_gif](./PxNov_201103_80sGrid/PxNov_201103_Cyberpunk.gif)
+
+### 4th November: Fractl Tree
+![FractalTree_gif](./PxNov_201104_FractalTree/PxNov_201104_FractalTree.gif)
 
 
 ## Technical details
 
-The BASIC program are developped for the french microcomputer Thomson MO5, runnning a Microsoft Basic 1.0. All program are tested and developped in the emulator DCMOTO available [here](http://dcmoto.free.fr/).
+The BASIC programs behind these animations are developped for the french microcomputer Thomson MO5, runnning a Microsoft Basic 1.0. All program are tested and developped in the emulator DCMOTO available [here](http://dcmoto.free.fr/).
 
 ![ThomsonMO5](MO5.jpg)
 
