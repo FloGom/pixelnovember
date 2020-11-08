@@ -1,0 +1,44 @@
+00 ' Pixel November 06
+01 ' Random Color Tiles
+
+
+05 MYTITLE$ = "Random Color Tiles"
+
+09 CLS
+10 SCREEN 7,0,0
+11 ATTRB 1,1
+12 LOCATE (40-LEN(MYTITLE$)*2)/2-1, 6, 0
+13 PRINT MYTITLE$
+
+14 ATTRB 0,1
+15 LOCATE 11, 12, 0
+16 PRINT "Pixel November 05"
+
+17 LOCATE 15, 15, 0
+18 ATTRB 0,0
+19 PRINT "by FloGom"
+
+20 ' Start new seed for random function
+21 ATTRB 0,0
+22 LOCATE 8, 22, 0
+23 PRINT "Push any key to start."
+24 A$ = INKEY$
+25 U = RND
+26 IF A$="" THEN 24
+
+30 CLS
+35 SCREEN 7,0,0
+
+50 randcol = CINT(RND*14)+1
+55 randx = CINT(RND*37)+1
+60 randy = CINT(RND*22)+1
+
+65 LOCATE randx, randy
+68 COLOR randcol
+70 PRINT CHR$(127)
+
+80 GOTO 50
+
+499 END
+
+

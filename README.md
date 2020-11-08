@@ -9,7 +9,9 @@ The artwork is either fix or interactive.
 
 Each day of November a new program will be uploaded with some screenshots of the artwork.
 
-## Example
+You can navigate to each folder to have a preview in `.gif`.
+
+## Showcase
 
 ### 1st November: Matrix
 
@@ -21,9 +23,14 @@ Each day of November a new program will be uploaded with some screenshots of the
 ### 3rd November: Cyberpunk
 ![cyberpunk_gif](./PxNov_201103_80sGrid/PxNov_201103_Cyberpunk.gif)
 
-### 4th November: Fractl Tree
+### 4th November: Fractal Tree
 ![FractalTree_gif](./PxNov_201104_FractalTree/PxNov_201104_FractalTree.gif)
 
+### 5th November: Random Color Tiles
+![Random Color Tiles](./PxNov_201105_RandomColorTile/PxNov_201105_RandomColorTile.gif)
+
+### 6th November: Fireworks
+![Fireworks](./PxNov_201106_Fireworks/PxNov_201106_Fireworks.gif)
 
 ## Technical details
 
