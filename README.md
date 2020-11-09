@@ -32,6 +32,9 @@ You can navigate to each folder to have a preview in `.gif`.
 ### 6th November: Fireworks
 ![Fireworks](./PxNov_201106_Fireworks/PxNov_201106_Fireworks.gif)
 
+### 7th November: Bézier Dreams
+![Bézier](./PxNov_201107_BezierCurves/PxNov_201107_BezierDreams.gif)
+
 ## Technical details
 
 The BASIC programs behind these animations are developped for the french microcomputer Thomson MO5, runnning a Microsoft Basic 1.0. All program are tested and developped in the emulator DCMOTO available [here](http://dcmoto.free.fr/).
