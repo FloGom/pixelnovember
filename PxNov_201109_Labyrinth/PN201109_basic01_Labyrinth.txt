@@ -1,0 +1,49 @@
+00 ' Pixel November 09
+01 ' Labyrinth Randomness
+02 ' https://en.wikipedia.org/wiki/B%C3%A9zier_curve
+
+
+09 ' prepare two tiles
+10 CLEAR ,,2
+11 DEFGR$(0) = 3+128, 7, 14, 28, 56, 112, 224, 192 + 1
+12 DEFGR$(1) = 192+1, 224, 112, 56, 28, 14, 7, 3 + 128
+
+15 MYTITLE$ = "Labyrinth"
+
+20 CLS
+21 SCREEN 2,0,0
+22 ATTRB 1,1
+23 LOCATE (40-LEN(MYTITLE$)*2)/2-1, 6, 0
+24 PRINT MYTITLE$
+
+25 ATTRB 0,1
+26 LOCATE 11, 12, 0
+27 PRINT "Pixel November 09"
+
+28 LOCATE 15, 15, 0
+29 ATTRB 0,0
+30 PRINT "by FloGom"
+
+40 ' Start new seed for random function
+41 ATTRB 0,0
+42 LOCATE 8, 22, 0
+43 PRINT "Push any key to start."
+44 A$ = INKEY$
+45 U = RND
+46 IF A$="" THEN 44
+
+47 CLS ' pick random color
+48 SCREEN CINT(RND*4)+1, 0, 0
+
+50 COUNT = 0
+55 IF RND > 0.5 THEN PRINT GR$(0); ELSE PRINT GR$(1);
+60 COUNT = COUNT + 1
+65 IF COUNT > 2*40*25 THEN 48 ELSE 55
+
+
+495 A$=INKEY$
+496 IF A$="" THEN 495
+497 CLS
+
+500 END
+

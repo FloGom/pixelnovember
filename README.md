@@ -35,6 +35,11 @@ You can navigate to each folder to have a preview in `.gif`.
 ### 7th November: Bézier Dreams
 ![Bézier](./PxNov_201107_BezierCurves/PxNov_201107_BezierDreams.gif)
 
+
+### 9th November: Labyrinth
+![Labyrinth](./PxNov_201109_Labyrinth/PxNov_201109_Labyrinth.gif)
+
+
 ## Technical details
 
 The BASIC programs behind these animations are developped for the french microcomputer Thomson MO5, runnning a Microsoft Basic 1.0. All program are tested and developped in the emulator DCMOTO available [here](http://dcmoto.free.fr/).
