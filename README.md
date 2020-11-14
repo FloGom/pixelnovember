@@ -1,6 +1,7 @@
 # Pixel November
 
 
+
 ## Goal
 
 \#PixelNovember is an artistic challenge to make use of old computers like the Thomson MO5.
@@ -10,6 +11,8 @@ The artwork is either fix or interactive.
 Each day of November a new program will be uploaded with some screenshots of the artwork.
 
 You can navigate to each folder to have a preview in `.gif`.
+
+Go to [Technical Details](#Technical-details) to learn more.
 
 ## Showcase
 
