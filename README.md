@@ -35,10 +35,13 @@ You can navigate to each folder to have a preview in `.gif`.
 ### 7th November: Bézier Dreams
 ![Bézier](./PxNov_201107_BezierCurves/PxNov_201107_BezierDreams.gif)
 
+### 8th November: 
 
 ### 9th November: Labyrinth
 ![Labyrinth](./PxNov_201109_Labyrinth/PxNov_201109_Labyrinth.gif)
 
+### 10th November: Coastline
+![Coastline](./PxNov_201110_Water/PxNov_201110_CoastlineFinal.gif)
 
 ## Technical details
 
