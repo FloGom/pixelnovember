@@ -47,7 +47,7 @@ Go to [Technical Details](#Technical-details) to learn more.
 ![Coastline](./PxNov_201110_Water/PxNov_201110_CoastlineFinal.gif)
 
 ### 11th November: Curved Labyrinth
-![](./PxNov_201111_CurvedLabyrinth/PxNov_201111_CurvedLabyrinth.gif)
+![Curvd Labyrinth](./PxNov_201111_CurvedLabyrinth/PxNov_201111_CurvedLabyrinth.gif)
 
 ## Technical details
 
