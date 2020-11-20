@@ -46,6 +46,9 @@ Go to [Technical Details](#Technical-details) to learn more.
 ### 10th November: Coastline
 ![Coastline](./PxNov_201110_Water/PxNov_201110_CoastlineFinal.gif)
 
+### 11th November: Curved Labyrinth
+![](./PxNov_201111_CurvedLabyrinth/PxNov_201111_CurvedLabyrinth.gif)
+
 ## Technical details
 
 The BASIC programs behind these animations are developped for the french microcomputer Thomson MO5, runnning a Microsoft Basic 1.0. All program are tested and developped in the emulator DCMOTO available [here](http://dcmoto.free.fr/).

@@ -3,27 +3,27 @@
 
 05 MYTITLE$ = "Title"
 
-09 CLS
-10 SCREEN 0,7,0
-11 ATTRB 1,1
-12 LOCATE (40-LEN(MYTITLE$)*2)/2-1, 6, 0
-13 PRINT MYTITLE$
+19 CLS
+20 SCREEN 0,7,0
+21 ATTRB 1,1
+22 LOCATE (40-LEN(MYTITLE$)*2)/2-1, 6, 0
+23 PRINT MYTITLE$
 
-14 ATTRB 0,1
-15 LOCATE 11, 12, 0
-16 PRINT "Pixel November ##"
+24 ATTRB 0,1
+25 LOCATE 11, 12, 0
+26 PRINT "Pixel November ##"
 
-17 LOCATE 15, 15, 0
-18 ATTRB 0,0
-19 PRINT "by FloGom"
+27 LOCATE 15, 15, 0
+28 ATTRB 0,0
+29 PRINT "by FloGom"
 
-20 ' Start new seed for random function
-21 ATTRB 0,0
-22 LOCATE 8, 22, 0
-23 PRINT "Push any key to start."
-24 A$ = INKEY$
-25 U = RND
-26 IF A$="" THEN 24
+40 ' Start new seed for random function
+41 ATTRB 0,0
+42 LOCATE 8, 22, 0
+43 PRINT "Push any key to start."
+44 A$ = INKEY$
+45 U = RND
+46 IF A$="" THEN 24
 
 
 

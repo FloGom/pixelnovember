@@ -1,0 +1,53 @@
+00 ' Pixel November ##
+01 ' Curved Labyrinth
+
+02 CLEAR ,,4
+03 DEFGR$(0) = 24, 24, 48, 224, 192, 0, 0, 0
+04 DEFGR$(1) = 24, 24, 12, 7, 3, 0, 0, 0
+05 DEFGR$(2) = 0, 0, 0, 3, 7, 12, 24, 24
+06 DEFGR$(3) = 0, 0, 0, 192, 224, 48, 24, 24
+
+15 MYTITLE$ = "Curved Labyrinth"
+
+19 CLS
+20 SCREEN 1,0,0
+21 ATTRB 1,1
+22 LOCATE (40-LEN(MYTITLE$)*2)/2-1, 6, 0
+23 PRINT MYTITLE$
+
+24 ATTRB 0,1
+25 LOCATE 11, 12, 0
+26 PRINT "Pixel November 11"
+
+27 LOCATE 15, 15, 0
+28 ATTRB 0,0
+29 PRINT "by FloGom"
+
+40 ' Start new seed for random function
+41 ATTRB 0,0
+42 LOCATE 8, 22, 0
+43 PRINT "Push any key to start."
+44 A$ = INKEY$
+45 U = RND
+46 IF A$="" THEN 24
+
+50 COUNT = 0
+51 CLS
+
+55 CHOICE = RND
+56 IF CHOICE < 0.25 THEN PRINT GR$(0) ;
+57 IF (CHOICE >= 0.25 AND CHOICE < 0.50) THEN PRINT GR$(1);
+58 IF (CHOICE >= 0.50 AND CHOICE < 0.75) THEN PRINT GR$(2);
+59 IF CHOICE >= 0.75 THEN PRINT GR$(3);
+60 COUNT = COUNT + 1
+
+62 IF COUNT > (40*25-1) THEN COUNT = 0 : COLOR CINT(RND*5+1)
+
+65 GOTO 55
+
+
+495 A$=INKEY$
+496 IF A$="" THEN 495
+497 CLS
+
+500 END
